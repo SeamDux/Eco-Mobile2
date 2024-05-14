@@ -1,3 +1,8 @@
+<?php
+include'global/config.php';
+include 'global/conexion.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +24,7 @@
         <div id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Item 1 <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#"> Ver carrito <span class="sr-only">(current)</span></a>  
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="index.php" tabindex="-1" aria-disabled="true">HOME</a>
@@ -32,14 +37,85 @@
     </nav>
     <br>
     <br>
-    <div class="container" >
+    < class="container" >
         <br>
         <div class="alert alert-success">
             pantalla de mensaje...
-            <a href="#" class="badge badge-success" >ver carrito </a>
-
-
+                <a href="#" class="badge badge-success" >ver carrito </a>
     </div>
+    <div class="row">
+        <div class = "col-3">
+            <div class="card">
+                <img 
+                titule="titulo producto"
+                alt="titulo"
+                class="card-img-top" src="https://clevercel.mx/cdn/shop/files/apple-iphone-14-pro-max-1_1_617x.jpg?v=1697574974" alt="">
+                <div class="card-body">
+                <span>Titulo del producto</span>    
+                    <h5 class="card-title">$100.000.000</h5>
+                    <p class="card-text">Content</p>
+                    <<button class="btn btn-primary" noame= "btnAccion" value="Agregar" type="submit"
+                    >
+                    Agregar al carrito</button>
+                </div>
+            </div>
+
+        </div>
+        <div class = "col-3">
+            <div class="card">
+                <img 
+                titule="titulo producto"
+                alt="titulo"
+                class="card-img-top" src="https://clevercel.mx/cdn/shop/files/apple-iphone-14-pro-max-1_1_617x.jpg?v=1697574974" alt="">
+                <div class="card-body">
+                <span>Titulo del producto</span>    
+                    <h5 class="card-title">$100.000.000</h5>
+                    <p class="card-text">Content</p>
+                    <<button class="btn btn-primary" noame= "btnAccion" value="Agregar" type="submit"
+                    >
+                    Agregar al carrito</button>
+                </div>
+            </div>
+
+        </div>
+        <div class = "col-3">
+            <div class="card">
+                <img 
+                titule="titulo producto"
+                alt="titulo"
+                class="card-img-top" src="https://clevercel.mx/cdn/shop/files/apple-iphone-14-pro-max-1_1_617x.jpg?v=1697574974" alt="">
+                <div class="card-body">
+                <span>Titulo del producto</span>    
+                    <h5 class="card-title">$100.000.000</h5>
+                    <p class="card-text">Content</p>
+                    <<button class="btn btn-primary" noame= "btnAccion" value="Agregar" type="submit"
+                    >
+                    Agregar al carrito</button>
+                </div>
+            </div>
+
+        </div>
+        <div class = "col-3">
+            <div class="card">
+                <img 
+                titule="titulo producto"
+                alt="titulo"
+                class="card-img-top" src="https://clevercel.mx/cdn/shop/files/apple-iphone-14-pro-max-1_1_617x.jpg?v=1697574974" alt="">
+                <div class="card-body">
+                <span>Titulo del producto</span>    
+                    <h5 class="card-title">$100.000.000</h5>
+                    <p class="card-text">Content</p>
+                    <<button class="btn btn-primary" noame= "btnAccion" value="Agregar" type="submit"
+                    >
+                    Agregar al carrito</button>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+        
+    </d>>
     
 </body>
 </html>
