@@ -1,5 +1,5 @@
 <?php
-include'global/config.php';
+include 'global/config.php';
 include 'global/conexion.php';
 ?>
 
@@ -37,13 +37,21 @@ include 'global/conexion.php';
     </nav>
     <br>
     <br>
-    < class="container" >
+    <div class="container" >
         <br>
         <div class="alert alert-success">
             pantalla de mensaje...
                 <a href="#" class="badge badge-success" >ver carrito </a>
+        </div>
     </div>
     <div class="row">
+        <?php
+        $sentencia=$pdo->prepare("SELECT * FROM `tblproductos`");
+        $sentencia->execute();
+        $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
+        print_r($listaProductos);
+        ?>
+
         <div class = "col-3">
             <div class="card">
                 <img 
@@ -61,6 +69,7 @@ include 'global/conexion.php';
             </div>
 
         </div>
+    </div>   
         <div class = "col-3">
             <div class="card">
                 <img 
@@ -115,7 +124,7 @@ include 'global/conexion.php';
         
     </div>
         
-    </d>>
+    </div>>
     
 </body>
 </html>
