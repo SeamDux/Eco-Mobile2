@@ -49,26 +49,38 @@ include 'global/conexion.php';
         $sentencia=$pdo->prepare("SELECT * FROM `tblproductos`");
         $sentencia->execute();
         $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
-        print_r($listaProductos);
+        //print_r($listaProductos);
         ?>
 
-        <div class = "col-3">
+        <?php foreach($listaProductos as $producto) { ?>            
+            <div class = "col-3">
             <div class="card">
                 <img 
-                titule="titulo producto"
-                alt="titulo"
-                class="card-img-top" src="https://clevercel.mx/cdn/shop/files/apple-iphone-14-pro-max-1_1_617x.jpg?v=1697574974" alt="">
+                titule="<?php echo$producto['Imagen'];?>"
+                alt="<?php echo$producto['Imagen'];?>"
+                class="card-img-top" 
+                src="<?php echo$producto['Imagen'];?>" alt="">
+                
                 <div class="card-body">
-                <span>Titulo del producto</span>    
-                    <h5 class="card-title">$100.000.000</h5>
+                <span><?php echo$producto['Nombre'];?></span>    
+                    <h5 class="card-title">$<?php echo$producto['Precio'];?></h5>
                     <p class="card-text">Content</p>
-                    <<button class="btn btn-primary" noame= "btnAccion" value="Agregar" type="submit"
+                    
+                    <<button class="btn btn-primary" 
+                    noame= "btnAccion" 
+                    value="Agregar" 
+                    type="submit"
                     >
                     Agregar al carrito</button>
                 </div>
             </div>
 
         </div>
+
+
+        <?php } ?>
+
+
     </div>   
         <div class = "col-3">
             <div class="card">
