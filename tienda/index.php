@@ -65,9 +65,9 @@ include 'carrito.php';
                 alt="<?php echo$producto['Imagen'];?>"
                 class="card-img-top" 
                 src="<?php echo$producto['Imagen'];?>"
-                data-toggle="popover"
-                data-trigger="hover"
-                data-content="<?php echo$producto['Descripcion'];?>"
+                data-toggle='popover'
+                data-trigger='hover'
+                data-content='<?php echo$producto['Descripcion'];?>'
                 >
 
                 
@@ -79,13 +79,13 @@ include 'carrito.php';
 
                 <form action="" method="post">
 
-                <imput type ="text" name="id" id="id" value="<?php echo openssl_encrypt($producto['ID'],COD,KEY);?>"></imput>
-                <imput type ="text" name="nombre" id="nombre" value="<?php echo openssl_encrypt($producto['Nombre'],COD,KEY);?>"></imput>
-                <imput type ="text" name="precio" id="precio" value="<?php echo openssl_encrypt($producto['Precio'],COD,KEY);?>" ></imput>
-                <imput type ="text" name="cantidad" id="cantidad" value="<?php echo openssl_encrypt(1,COD,KEY);?>"></imput>
+                <input type ="text" name="id" id="id" value="<?php echo openssl_encrypt($producto['ID'],COD,KEY);?>">
+                <input type ="text" name="nombre" id="nombre" value="<?php echo openssl_encrypt($producto['Nombre'],COD,KEY);?>">
+                <input type ="text" name="precio" id="precio" value="<?php echo openssl_encrypt($producto['Precio'],COD,KEY);?>" >
+                <input type ="text" name="cantidad" id="cantidad" value="<?php echo openssl_encrypt(1,COD,KEY);?>">
 
                 <<button class="btn btn-primary" 
-                    noame= "btnAccion" 
+                    name= "btnAccion" 
                     value="Agregar" 
                     type="submit"
                     >
@@ -102,13 +102,13 @@ include 'carrito.php';
         <?php } ?>
 
 
-    </div>       
+    </div> 
     <script>
 
     $(function () {
-            $('[data-toggle="popover"]').popover()
-    });
+  $('[data-toggle="popover"]').popover()
+})      
+</script>
 
-    </script>
 </body>
 </html>
