@@ -27,9 +27,8 @@ include 'cabecera.php';
         <?php foreach($listaProductos as $producto) { ?>            
             <div class = "col-3">
             <div class="card">
-                <img 
 
-                
+                <img 
                 titule="<?php echo$producto['Imagen'];?>"
                 alt="<?php echo$producto['Imagen'];?>"
                 class="card-img-top" 
@@ -37,13 +36,17 @@ include 'cabecera.php';
                 data-toggle='popover'
                 data-trigger='hover'
                 data-content='<?php echo$producto['Descripcion'];?>'
-                height="317px"
+                height="300px"
+
+
+ 
                 >
 
                 
                 <div class="card-body">
                 <span><?php echo$producto['Nombre'];?></span>    
                     <h5 class="card-title">$<?php echo$producto['Precio'];?></h5>
+                    
                     "<?php echo$producto['Descripcion'];?>"
                     
 
@@ -57,8 +60,8 @@ include 'cabecera.php';
                 <<button class="btn btn-primary" 
                     name= "btnAccion" 
                     value="Agregar" 
-                    type="submit"
-                    >
+                    type="submit">
+                    
                     Agregar al carrito</button>
                 </form>
 
@@ -77,7 +80,7 @@ include 'cabecera.php';
 
     $(function () {
   $('[data-toggle="popover"]').popover()
-})      
+});
 </script>
 
 <?php

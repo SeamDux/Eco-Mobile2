@@ -12,7 +12,9 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand"href="index.php">EMPRESA</a>
+        <a class="navbar-brand"href="index.php">
+        <img src="https://th.bing.com/th/id/OIP.HKboA4mjlSTGV_U0MsfcwQHaHa?rs=1&pid=ImgDetMain" alt="Descripción de la imagen" style="max-height: 30px;">
+        </a>
         <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,13 +22,13 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php" tabindex="-1" aria-disabled="true">HOME</a>
+                    <a class="nav-link" href="index.php" tabindex="-1" aria-disabled="true">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php" tabindex="-1" aria-disabled="true">Quienes somos</a>
+                    <a class="nav-link" href="quienesSomos.php" tabindex="-1" aria-disabled="true">Quienes somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="mostrarCarrito.php" >CARRITO(<?php
+                    <a class="nav-link" href="mostrarCarrito.php" >Carrito(<?php
                     echo (empty($_SESSION["CARRITO"]))?0:count($_SESSION["CARRITO"]);
                     
                     
