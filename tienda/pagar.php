@@ -60,7 +60,7 @@ if($_POST){
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="text-center">
 
 <head>
     <!-- Add meta tags for mobile and IE -->
@@ -69,16 +69,16 @@ if($_POST){
     <title> PayPal Checkout Integration | Server Demo </title>
 </head>
 
-<body>
+<body >
     <!-- Set up a container element for the button -->
-    <div id="paypal-button-container"></div>
+    <div  id="paypal-button-container"></div>
 
     <!-- Include the PayPal JavaScript SDK -->
     <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
 
     <script>
         // Render the PayPal button into #paypal-button-container
-        paypal.Buttons({
+        paypal.Buttons ({
 
             // Call your server to set up the transaction
             createOrder: function(data, actions) {

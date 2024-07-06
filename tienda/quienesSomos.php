@@ -48,7 +48,7 @@ include 'cabecera.php';
                 
             
             Quiénes Somos</h2>
-            <p><?php echo isset($informacion['quienes_somos']) ? $informacion['quienes_somos'] : 'En [Nombre de la Empresa], nos dedicamos a conectar a las personas con la tecnología que impulsa el mundo moderno. Fundada en [Año de Fundación], nuestra misión es ofrecer los mejores teléfonos móviles del mercado, combinando innovación, calidad y accesibilidad para todos nuestros clientes.'; ?></p>
+            <p><?php echo isset($informacion['quienes_somos']) ? $informacion['quienes_somos'] : 'En ventas duoc, nos dedicamos a conectar a las personas con la tecnología que impulsa el mundo moderno. Fundada en 2024, nuestra misión es ofrecer los mejores teléfonos móviles del mercado, combinando innovación, calidad y accesibilidad para todos nuestros clientes.'; ?></p>
         </div>
     </section>
     <section>
@@ -66,7 +66,7 @@ include 'cabecera.php';
     <section>
         <div class="container">
             <h2>Nuestra Historia</h2>
-            <p><?php echo isset($informacion['Nuestra Historia']) ? $informacion['mision'] : 'Desde nuestros humildes comienzos en [Lugar de Fundación], hemos crecido hasta convertirnos en una empresa reconocida y respetada en el sector de la telefonía móvil. A lo largo de los años, hemos ampliado nuestra oferta de productos y servicios, siempre con la misma dedicación a la calidad y la satisfacción del cliente.'; ?></p>
+            <p><?php echo isset($informacion['Nuestra Historia']) ? $informacion['mision'] : 'Desde nuestros humildes comienzos en Duoc sede San Bernardo, hemos crecido hasta convertirnos en una empresa reconocida y respetada en el sector de la telefonía móvil. A lo largo de los años, hemos ampliado nuestra oferta de productos y servicios, siempre con la misma dedicación a la calidad y la satisfacción del cliente.'; ?></p>
         </div>
     </section>
 </body>
